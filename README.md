@@ -1,20 +1,21 @@
 # RK Solution Android APK
 
-This repository builds the RK Solution Clock + Calendar Android app with GitHub Actions.
+The Android project and GitHub Actions build workflow are already added.
 
-## Add the Android project files
+## One file still needs uploading
 
-Upload the **contents inside** the `RK_Solution_Android_Project` folder from the provided ZIP to this repository's root (not the enclosing folder itself). Keep the `.github/workflows/build-apk.yml` file.
+Upload the prepared HTML file as exactly:
 
-Required project files include:
-- `settings.gradle`
-- `build.gradle`
-- `gradle.properties`
-- `app/build.gradle`
-- `app/src/main/AndroidManifest.xml`
-- `app/src/main/java/com/rksolution/clockcalendar/MainActivity.java`
-- `app/src/main/assets/index.html`
+`app/src/main/assets/index.html`
 
-## Build
+Use the file named **Rafique_Android_Clock_Calendar_Wallpaper.html** from the prepared download. When GitHub asks for the destination, make sure it is inside `app/src/main/assets/` and name it `index.html`.
 
-After the project files are uploaded, push to `main` or open Actions and run **Build RK Solution APK**. Download `RK-Solution-debug-APK` from the run's Artifacts section.
+## Build the APK
+
+1. Open the **Actions** tab.
+2. Select **Build RK Solution APK**.
+3. Click **Run workflow** and confirm.
+4. Wait for the run to finish with a green check.
+5. Open that run and download **RK-Solution-debug-APK** under Artifacts.
+
+The APK is not built until the workflow succeeds.
