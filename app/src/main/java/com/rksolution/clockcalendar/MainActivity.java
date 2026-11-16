@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
         settings.setLoadsImagesAutomatically(true);
         webView.setWebViewClient(new WebViewClient());
         webView.setWebChromeClient(new WebChromeClient());
-        webView.loadUrl("file:///android_asset/index.html");
+        webView.loadUrl("file:///android_asset/Rafique_Live_Wallpaper(1).html");
         setContentView(webView);
     }
 
