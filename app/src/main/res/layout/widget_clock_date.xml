@@ -1,74 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:gravity="center_vertical"
-    android:padding="14dp"
-    android:background="@drawable/widget_blue_background">
+    android:background="#05070D">
+
+    <ImageView
+        android:id="@+id/kids_art"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/kids_clock"
+        android:scaleType="centerCrop"
+        android:contentDescription="Four children holding a digital clock and calendar" />
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1.35"
-        android:orientation="vertical"
-        android:gravity="center_vertical">
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="#F0000000">
+
         <TextClock
             android:id="@+id/widget_time"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:format12Hour="h:mm"
+            android:layout_weight="1"
+            android:format12Hour="h:mm a"
             android:format24Hour="HH:mm"
-            android:textColor="#FFFFFF"
-            android:textSize="48sp"
+            android:textColor="#73D9FF"
+            android:textSize="25sp"
             android:fontFamily="sans-serif-black"
             android:includeFontPadding="false" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="RK SOLUTION"
-            android:textColor="#BBD8FF"
-            android:textSize="10sp"
-            android:letterSpacing="0.18"
-            android:layout_marginTop="5dp" />
-    </LinearLayout>
 
-    <View
-        android:layout_width="1dp"
-        android:layout_height="76dp"
-        android:background="#77FFFFFF" />
-
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:paddingStart="10dp">
         <TextClock
             android:id="@+id/widget_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:format12Hour="EEE"
-            android:format24Hour="EEE"
-            android:textColor="#FFD45E"
-            android:textSize="22sp"
+            android:format12Hour="EEE, dd MMM"
+            android:format24Hour="EEE, dd MMM"
+            android:textColor="#FFD84D"
+            android:textSize="13sp"
             android:fontFamily="sans-serif-bold" />
-        <TextClock
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:format12Hour="dd MMM yyyy"
-            android:format24Hour="dd MMM yyyy"
-            android:textColor="#FFFFFF"
-            android:textSize="14sp"
-            android:layout_marginTop="4dp" />
-        <TextClock
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:format12Hour="hh:mm:ss a"
-            android:format24Hour="HH:mm:ss"
-            android:textColor="#CFE4FF"
-            android:textSize="12sp"
-            android:layout_marginTop="7dp" />
     </LinearLayout>
-</LinearLayout>
+</FrameLayout>
